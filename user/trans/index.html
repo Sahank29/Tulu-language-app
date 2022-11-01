@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HTML5 App for Phonetic typing and converting to some Indian Languages
+       Written by Amarnath S, Bengaluru, India, November 2020
+       Please report issues to amarnaths.0005@gmail.com -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Phonetic Typing in Tulu Language</title>
+  </head>
+  <body>
+    <div id="mainHeading">
+      <h1>Phonetic Typing in Tulu Language</h1>
+    </div>
+
+    <div class="container">
+      <div id="leftPanel">
+        <h3>Type Input in English here (No Special Characters please)</h3>
+
+        <label for="" class="warn"
+          >Please copy input text to clipboard before clicking on any other
+          button on this page.</label
+        >
+        <br />
+        Select Language
+        <select id="inpLang" class="langu">
+          <!-- <option class="langu" value="kannada"></option> -->
+          <option class="langu" value="malayalam">Tulu</option>
+        </select>
+        <br />
+
+        <textarea id="inputEnglish" rows="13" cols="35" maxlength="4000">
+
+        </textarea>
+        <br />
+        <button id="copyInpText">Copy Input Text to Clipboard</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a class="leftbtn" href="#"
+          ><div class="tooltip">
+            Contact me
+            <span class="tooltiptext"><!-- amarnaths.0005@gmail.com --> sahank29@gmail.com</span>
+          </div>
+        </a>
+      </div>
+
+      <div id="midPanel" class="buttonGroup">
+        <br />
+        <br />
+        <br />
+        <a class="leftbtn" id="horizLine" href="index.html" >
+          <br><br><br><br>
+          <div class="tooltip">
+            Usage
+
+          </div>
+        </a>
+        <p></p>
+        <button  id="transliterate">Translate</button>
+        <p></p>
+        <button style="display: none" id="sampleAssamese">Sample Assamese Text</button>
+        <p></p>
+        <button style="display: none" id="sampleBengali">Sample Bengali Text</button>
+        <p></p>
+        <button style="display: none"id="sampleDevanagari">Sample Devanagari Text</button>
+        <p></p>
+        <button style="display: none"id="sampleKannada1">Sample Kannada Text 1</button>
+        <p></p>
+        <button style="display: none"id="sampleKannada2">Sample Kannada Text 2</button>
+        <p></p>
+        <button style="display: none"id="sampleKannada3">Sample Kannada Text 3</button>
+        <p></p>
+        <button style="display: none"id="sampleGujarati">Sample Gujarati Text</button>
+        <p></p>
+        <button style="display: none"id="sampleGurmukhi">Sample Gurmukhi Text</button>
+        <p></p>
+        <button style="display: none"id="sampleMalayalam">Sample Malayalam Text</button>
+        <p></p>
+        <button style="display: none"id="sampleOdia">Sample Odia Text</button>
+        <p></p>
+        <button style="display: none"id="sampleTamil">Sample Tamil Text</button>
+        <p></p>
+        <button style="display: none"id="sampleTelugu">Sample Telugu Text</button>
+        <br><br><br><br><Br><br><br><br><br><br><br><Br><br><br><br><br>
+        <button><a href="../index.php">Back to home</a></button>
+      </div>
+
+      <div id="rightPanel">
+        <h3>Tulu Output</h3>
+
+        <label for="" class="warn"
+          >Disclaimer: This transliteration is not guaranteed to be completely
+          accurate. Please check each word. This software tool is provided as-is
+          with no liabilities for any mis-transliteration.
+        </label>
+        <br />
+        <textarea id="outputText" rows="13" cols="35" readonly>
+            
+        </textarea>
+        <br />
+        <button id="copyOutText">Copy feature yet to be added  </button>
+      </div>
+    </div>
+
+    <script src="js/kannada.js"></script>
+    <script src="js/devanagari.js"></script>
+    <script src="js/telugu.js"></script>
+    <script src="js/bengali.js"></script>
+    <script src="js/oriya.js"></script>
+    <script src="js/tamil.js"></script>
+    <script src="js/gujarati.js"></script>
+    <script src="js/gurmukhi.js"></script>
+    <script src="js/malayalam.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

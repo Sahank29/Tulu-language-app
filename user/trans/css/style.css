@@ -1,0 +1,102 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif,tulu;
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+
+@font-face{
+  font-family: 'tulu';
+  src:url('tulu.woff')format('woff'),
+  url('tulu.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 43fr 14fr 43fr;
+}
+
+#leftPanel {
+  background: #333333;
+  padding: 15px 15px;
+}
+
+#midPanel {
+  background: #404040;
+}
+
+#rightPanel {
+  background: #333333;
+  padding: 15px 15px;
+}
+
+#inputEnglish,
+#outputText {
+  color: midnightblue;
+  text-align: left;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+#outputText {
+  color: midnightblue;
+  background-color: lavender;
+}
+
+.langu {
+  color: black;
+}
+
+.buttonGroup button {
+  background-color: darkgray;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 12px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: block; /* Make the buttons appear below each other */
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+button {
+  color: black;
+  font-weight: bold;
+}
+
+#mainHeading {
+  background-color: #4d4d4d;
+  padding: 7px 10px;
+}
+
+.warn {
+  color: darksalmon;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted blueviolet;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: paleturquoise;
+  color: #111111;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 4px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
